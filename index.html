@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>My love ❤️</strong>
+                        <p>
+     you are truly my everthing the most precious person that i love and means to me the whole fkn world.lately felt my words didnt mean to u how they used to do 
+     that does hurts me but ,i wont think about it now all im thinking how to show u and tell u how much i love you
+      a small tip  click next to go to next page👀😂
+    </p>
+    
+</div>
+</div>
+</div>
+<div class="heart"></div>
+</div>
+<a href="next.html" class="link"><i  class="fa-regular fa-heart"><div class="inner"></div></i></a>
+</div>
+<script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>

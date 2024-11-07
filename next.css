@@ -1,0 +1,84 @@
+/* General container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+    padding: 10px;
+    max-width: 420px; /* Limits width to fit iPhone 11 */
+ min-height: 100vh;
+   max-height:   100vh;
+}
+
+/* Box styling */
+.box {
+    background-color: #e9ecef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Card styling */
+.card {
+    padding: 15px;
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+}
+
+/* Audio controls styling */
+.custom-audio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #e9ecef;
+    padding: 8px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 360px;
+}
+
+.play-pause {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.progress {
+    flex-grow: 1;
+    height: 6px;
+}
+
+.time {
+    font-family: Arial, sans-serif;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+
+
+  /* Media Query for iPhone 11 */
+@media only screen and (max-width: 414px) {
+    .play-pause {
+        padding: 6px;
+        font-size: 0.9rem;
+    }
+
+    .progress {
+        height: 5px;
+    }
+
+    .time {
+        font-size: 0.85rem;
+    }
+}
