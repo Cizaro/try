@@ -1,3 +1,6 @@
+body{padding: 0;
+margin: 0;}
+
 /* General container styling */
 .container {
     display: flex;
@@ -5,7 +8,7 @@
     align-items: center;
     justify-content: start;
     gap: 5px;
-    padding: 10px;
+    padding: 8px;
     max-width: 420px; /* Limits width to fit iPhone 11 */
  min-height: 100vh;
    max-height:   100vh;
@@ -70,7 +73,7 @@
   /* Media Query for iPhone 11 */
 @media only screen and (max-width: 414px) {
     .play-pause {
-        padding: 6px;
+        padding: 5px;
         font-size: 0.9rem;
     }
 
@@ -79,6 +82,6 @@
     }
 
     .time {
-        font-size: 0.85rem;
+        font-size: 0.5rem;
     }
 }
